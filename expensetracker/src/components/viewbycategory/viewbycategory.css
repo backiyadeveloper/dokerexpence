@@ -1,0 +1,17 @@
+.viewdiv{
+    background-color: aliceblue;
+    border-radius: 30px;
+    box-shadow: 10px 10px 5px rgba(3, 3, 3, 0.1);
+  
+}
+.v1div{
+    height: 20%;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+.viewdiv >form{
+    display: grid;
+    grid-template-columns: auto 200PX;
+    gap: 20px;
+}

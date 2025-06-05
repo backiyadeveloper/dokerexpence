@@ -1,0 +1,42 @@
+
+.expesneh1{
+    text-align: center;
+}
+
+form >div{
+   
+   display: grid;
+   grid-template-columns: 30% 30%;
+   justify-content: center;
+    align-items: center;
+    padding-bottom: 30px;
+}
+.div1{
+    width: 40vw;
+   padding: 20px;
+   background-color: aliceblue;
+   border-radius: 30px;
+   
+   box-shadow: 10px 10px 5px rgba(3, 3, 3, 0.1);
+}
+form >div{
+   
+   display: grid;
+   grid-template-columns: 30% 30%;
+   justify-content: center;
+    align-items: center;
+    padding-bottom: 30px;
+}
+.expesnediv {
+    color: black;
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    justify-content: center; 
+    align-items: center; 
+    text-align: center; 
+}
+span{
+    color: red;
+}
+

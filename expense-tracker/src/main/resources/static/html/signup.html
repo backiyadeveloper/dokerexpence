@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker</title>
+    <link rel="icon" href="../assert/images.png" type="image">
+    <link rel="stylesheet" href="../css/signup.css">
+    <link rel="stylesheet" href="..//css/expense.css">
+</head>
+<body>
+    <div class="navborder">
+        <img src="../assert/images.png" style="height: 60px; width: 60px; border-radius: 50%; float: left;" alt="">
+        <nav class="navtag">
+            <a href="./mainpage.html" class="atag">Mainpage</a>
+        </nav>
+    </div>
+    <div class="parentdiv">
+        <div class="parentdiv1">
+            <!-- Left Panel -->
+            <div class="login">
+                <div>
+                    <h1>LOGIN</h1>
+                    <h1>Your Account</h1>
+                    <button onclick="showLogin()">Login</button>
+                    <button onclick="showSignUp()">Sign Up</button>
+                </div>
+            </div>
+            <!-- Form Container -->
+            <div class="formdiv">
+                <!-- Login Form -->
+                <form id="loginForm" onsubmit="login(event)" class="loginform active-form">
+                    <h1>Login</h1>
+                    <label for="username">Username</label>
+                    <input type="text" id="signusername" class="signinput" required>
+                    <label for="password">Password</label>
+                    <input type="password" id="signpassword" class="signinput" required>
+                    <button type="submit" class="logbut">LOGIN</button>
+                    <span id="logspan"></span>
+                    <p>Don't have an account? <span onclick="showSignUp()" class="toggle-link">Sign up</span></p>
+                </form>
+                <!-- Sign Up Form -->
+                <form id="signUpForm" onsubmit="addsignindata(event)" class="loginform">
+                    <h1>Sign Up</h1>
+                    <label for="newUsername">Username</label>
+                    <input type="text" class="signinput" id="logusername" required>
+                    <label for="newPassword">Password</label>
+                    <input type="password" class="signinput" id="logpassword" required>
+                    <label for="confirmPassword">Confirm Password</label>
+                    <input type="password" class="signinput" id="conformpassword" required>
+                    <span id="logspan_signup"></span>
+                    <button type="submit" class="logbut">SIGN UP</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="../js/signup.js"></script>
+</body>
+</html>

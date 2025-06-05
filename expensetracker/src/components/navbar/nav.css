@@ -1,0 +1,37 @@
+.navborder {
+    position: fixed;
+    top: 0;
+    width: 98%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: linear-gradient(to right, rgb(3, 253, 199), rgb(47, 157, 165));
+    padding: 0 20px;
+    z-index: 1000;
+  }
+  
+  .navimg {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+  }
+  
+  .navtag{
+    display: flex;
+    gap: 15px;
+  }
+  
+  .atag {
+    text-decoration: none;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 5px;
+  
+  }
+  
+  .atag:hover {
+    background-color: black;
+    color: white;
+  }
+  

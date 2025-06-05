@@ -1,0 +1,171 @@
+
+.active-form {
+    display: block;
+  }
+.parentdiv {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: antiquewhite;
+}
+.navimg{
+    height: 60px; width: 60px; border-radius: 50%; float: left;
+}
+.navborder {
+    position: fixed;
+    top: 0;
+    width: 98%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: linear-gradient(to right, rgb(3, 253, 199), rgb(47, 157, 165));
+    padding: 0 20px;
+    z-index: 1000;
+  }
+  .navtag{
+    display: flex;
+    gap: 15px;
+  }
+.parentdiv1 {
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    height: 90%;
+    max-width: 800px;
+    background-color: white;
+    border-radius: 20px;
+  
+    overflow: hidden;
+    box-shadow: 20px 20px 5px rgba(3, 3, 3, 0.1);
+}
+
+.login {
+    animation: backgroundAnimation 1s infinite alternate;
+    flex: 1;
+    min-width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #0ea4d6;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.login button {
+    margin: 10px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 50px;
+    background-color: white;
+    color: #0ea4d6;
+    cursor: pointer;
+}
+
+.login button:hover {
+    background-color: #ffffff99;
+}
+
+.formdiv {
+    overflow-y: scroll;
+    flex: 2;
+    min-width: 300px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+
+
+.loginform {
+    position: absolute;
+    width: 100%;
+    max-width: 400px;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.loginform input {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-bottom: 2px solid gray;
+    font-size: 1rem;
+    background-color: transparent;
+}
+
+.loginform input:focus {
+    outline: none;
+    border-bottom: 2px solid #0ea4d6;
+}
+
+.loginform.active-form {
+    display: flex;
+}
+
+.logbut {
+    width: 100%;
+    max-width: 200px;
+    padding: 10px;
+    background-color: #0ea4d6;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.logbut:hover {
+    background-color: #0d8ec0;
+}
+
+.toggle-link {
+    color: #0ea4d6;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+
+@media (max-width: 768px) {
+    .parentdiv1 {
+        flex-direction: column;
+    }
+    .login {
+        order: 2;
+        width: 100%;
+    }
+    .formdiv {
+        order: 1;
+        width: 100%;
+    }
+}
+
+
+.error{
+    color:red
+}
+.password-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+  
+  .password-container input {
+    flex: 1;
+  }
+  
+  .password-toggle-icon {
+    position: absolute;
+    right: 10px;
+    cursor: pointer;
+    user-select: none;
+  }
+  

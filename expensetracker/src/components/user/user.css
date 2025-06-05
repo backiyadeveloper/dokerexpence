@@ -1,0 +1,31 @@
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
+    width: 100vw;
+}
+.card {
+    width: 23vw;
+  padding-top: 20px;
+  padding-bottom: 20px;
+    background-color: #f8f9fa;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    box-shadow: 10px 10px 5px rgba(3, 3, 3, 0.1);
+    text-align: center;
+}
+.card h4 {
+    margin: 5px 0;
+    color: #333;
+}
+.edit-button {
+    margin: 10px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 50px;
+    color: white;
+    background-color: #0ea4d6;
+    cursor: pointer;
+}
